@@ -1,0 +1,251 @@
+html, body {
+
+}
+
+body {
+    font-family: 'Slabo 27px', serif;
+}
+
+h1, h2 {
+    font-family: 'Lobster', cursive;
+}
+
+h3, h4 {
+
+}
+
+h5, h6 {
+
+}
+
+a:-webkit-any-link {
+    color: rgba(150, 150, 255, 1.0);
+    text-decoration: none;
+}
+
+.title-style {
+    color: white;
+    text-shadow: 2px 3px rgb(0,0,10);
+    opacity: 0;
+}
+
+.title-container {
+
+}
+
+.first-description {
+    width: 600px;
+    margin: 0 auto;
+    color: black;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;
+}
+
+.row {
+    width: auto;
+    border: 1px solid blue;
+}
+
+.story-item {
+    font-size: 15px;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    padding: 24px;
+    text-align: center;
+    width: 600px;
+    text-shadow: 0px 1px rgba(200,200,200,1.0);
+    border: 4px solid rgba(200,200,200,0.6);
+    display: block;
+    height: auto;
+}
+
+.story-item-one {
+    margin: 0 auto;
+}
+
+.story-item-two {
+    width: 640px;
+    top: 180px;
+    left: 24px;
+}
+
+.story-item-three {
+    left: 24px;
+    top: 24px;
+}
+
+.story-item-four {
+    left: 24px;
+    top: 24px;
+}
+
+.story-item-five {
+    right: 24px;
+}
+
+.story-item-six {
+
+}
+
+.creative-commons-container {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 300px;
+    color: white;
+    text-shadow: 0px 1px rgba(70,70,70,1.0);
+    background: rgba(40,40,40, 0.8);
+    font-size: 12px;
+    z-index: 1000;
+    padding: 12px;
+    border-radius: 0px 8px 0px 0px;
+}
+
+.quick-facts-container {
+    width: 300px;
+    position: absolute;
+    top: 5%;
+    right: 30px;
+    height: auto;
+    padding: 12px 12px 12px 18px;
+    text-align: left;
+    text-shadow: 0px 1px rgba(200,200,200,1.0);
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.quick-facts-container-eco {
+    width: 300px;
+    position: absolute;
+    top: 5%;
+    left: 30px;
+    height: auto;
+    padding: 12px 12px 12px 18px;
+    text-align: left;
+    text-shadow: 0px 1px rgba(200,200,200,1.0);
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+
+
+
+.quick-facts-title {
+    display: block;
+    background-color: rgba(255,255,255,0.6);
+    border: 2px solid rgba(200,200,200,0.6);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    padding: 12px;
+
+}
+
+.quick-facts-title > .fa {
+    position: absolute;
+    right: 30px;
+    margin-top: 4px;
+}
+
+.quick-facts-title:hover {
+    cursor: pointer;
+}
+
+.quick-facts {
+    /* font-style: italic; */
+    background-color: rgba(255,255,255,0.6);
+    display: block;
+    border-left: 2px solid rgba(200,200,200,0.6);
+    border-right: 2px solid rgba(200,200,200,0.6);
+    border-bottom: 2px solid rgba(200,200,200,0.6);
+    display: none;
+}
+
+.quick-facts > .fact-container {
+
+    padding: 12px;
+    display: block;
+
+}
+
+.quick-facts > .fact-container > .fact-header  {
+
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+    display: block;
+    padding: 4px;
+    border-bottom: 2px solid rgba(200,200,200,0.6);
+
+}
+
+.quick-facts > .fact-container > .fact-text  {
+    padding: 12px 0px 0px 4px;
+    display: block;
+
+}
+
+#polar-eco {
+    left: 24px !important;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+
